@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Names of Jesus Christ</title>
+<style>
+  body {
+    font-family: "Times New Roman", Times, serif; /* Default font */
+    text-shadow: 2px 2px 4px rgba(140, 112, 112, 0.583); 
+    text-align: center; /* Center align the text */
+    padding-top: 5px; /* Add space from the top */
+    padding-bottom: 30px; /* Add space from the bottom */
+    background: /*line design*/
+                linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent), 
+                /*background color*/
+                linear-gradient(to right, #40455B 80%, #3e3d48 100%, #40455B 10%)left, /* left side: middle color is the shadow*/
+                linear-gradient(to left, #40455B 80%, #3e3d48 100%, #40455B 10%)right, /* Right side: middle color is the shadow*/
+                
+                #e0d0c6; /*background color*/
+                
+    background-size:350px 100%; /* Set the width of the lines */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+  }
+  
+  h1{
+    font-family: "Zapfino", cursive; /* Title font */
+    text-shadow: 2px 2px 4px rgba(140, 112, 112, 0.5); 
+    text-decoration: underline;
+    text-decoration: bold;
+  }
+  .name-container { 
+    margin: 0 auto; /* Center the container or 0 auto*/
+    max-width: 600px; /* Limit the width of the container */
+    padding: 20px; /* Add padding */
+    border: 10px solid #856d50; /* Add border around the container */
+    border-radius: 15px; /* Add border radius */
+    border-spacing: 10px; /* Adjust the spacing between the border and content */
+    padding-bottom: 5px; /* edit space on the bottom */
+    
+  }
+  .name {
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #2d1d14;
+    text-decoration: italic;
+    display:inline-block; /* inline-block ~ Add display property */
+    padding: 10px; /* Add padding */
+    border: 2px solid #856d50; /* Add border around the names */
+    border-radius: 5px; /* Add border radius */
+    background-color: #967b5a; /* Change box color */
+    font-family: "Times New Roman", Times, serif; /* Name font */
+    
+  }
+  .name:hover {
+    background-color: #856d50; /* Change background color on hover */
+  }
+  .reference {
+    /* display: none; */
+    margin-bottom: 10px;
+    overflow: hidden; /* Hide overflow content */
+    max-height: 0; /* Initially hide the references */
+    transition: max-height 0.5s ease; /* Smooth transition */ 
+
+  }
+  .references.open {
+    max-height: 200px; /* Set max height to show content */
+  }
+  .references ul {
+    list-style-type: none; /* Remove bullet points */
+  }
+  .references ul li a {
+    color: #2d1d14;
+    text-decoration: underline;
+    /*background-color: #967b5a; /* Change link background color */
+    /*padding: 5px 10px; /* Add padding to the link */
+    /*border-radius: 5px; /* Add border radius to the link */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  .reference ul li a:hover {
+    background-color: #856d50; /* Change background color on hover */
+  }
+
+  /* Search bar styles */
+  .search-bar {
+    margin-top: 0px; 
+    margin-bottom: 10px; 
+  }
+  .search-bar input[type="text"] {
+    padding: 2px; /* Add padding to the input */
+    width: 300px; /* Set width of the input */
+    border-radius: 5px; /* Add border radius */
+    border: 4px solid #cab8a1; /* Add border */
+    outline: none; /* Remove default outline */
+
+  }
+  .result-count {
+    margin-bottom: 10px; /* Adjust margin as needed */
+    color: #a6947d;
+  }
+
+  
+</style>
+</head>
+<body>
+
+  <!-- title -->
+<h1>Names of Jesus Christ</h1>
+
+<!-- Search bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Find names...">
+</div>
+<!-- Result count -->
+<div class="result-count" id="resultCount"></div>
+
+<div class="name-container">
+  <div class='name' onclick="toggleReferences('Advocate')">Advocate</div>
+  <div class="references" id="Advocate" style="display: none;">
+    <ul>
+      <li>1 John 2:1, D&C 110:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Advocate with The Father')">Advocate with The Father</div>
+  <div class="references" id="Advocate with The Father" style="display: none;">
+    <ul>
+      <li>1 John 2:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Almighty')">Almighty</div>
+  <div class="references" id="Almighty" style="display: none;">
+    <ul>
+      <li>Revelation 1:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Almighty God')">Almighty God</div>
+  <div class="references" id="Almighty God" style="display: none;">
+    <ul>
+      <li>Revelation 19:15, Mosiah 18:13, Job 32:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Alpha and Omega')">Alpha and Omega</div>
+  <div class="references" id="Alpha and Omega" style="display: none;">
+    <ul>
+      <li>Revelation 1:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Anointed One')">Anointed One</div>
+  <div class="references" id="Anointed One" style="display: none;">
+    <ul>
+      <li>Acts 10:38</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Apostle and High Priest of our Profession')">Apostle and High Priest of our Profession</div>
+  <div class="references" id="Apostle and High Priest of our Profession" style="display: none;">
+    <ul>
+      <li>Hebrews 3:1, 4:14, 10:21</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Author and Finisher of Our Faith')">Author and Finisher of Our Faith</div>
+  <div class="references" id="Author and Finisher of Our Faith" style="display: none;">
+    <ul>
+      <li>Hebrews 12:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Author of Eternal Salvation')">Author of Eternal Salvation</div>
+  <div class="references" id="Author of Eternal Salvation" style="display: none;">
+    <ul>
+      <li>Hebrews 5:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Balm of Gilead ')">Balm of Gilead </div>
+  <div class="references" id="Balm of Gilead " style="display: none;">
+    <ul>
+      <li>Jeremiah 8:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Beginning of the creation of God')">Beginning of the creation of God</div>
+  <div class="references" id="Beginning of the creation of God" style="display: none;">
+    <ul>
+      <li>Revelation 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Beloved and Chosen')">Beloved and Chosen</div>
+  <div class="references" id="Beloved and Chosen" style="display: none;">
+    <ul>
+      <li>Moses 4:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Beloved Son')">Beloved Son</div>
+  <div class="references" id="Beloved Son" style="display: none;">
+    <ul>
+      <li>3 Nephi 11:7, Luke 9:35</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Beloved Son of God')">Beloved Son of God</div>
+  <div class="references" id="Beloved Son of God" style="display: none;">
+    <ul>
+      <li>Matthew 3:17; 17:5; Mark 9:7; Luke 3:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Blessed for Evermore ')">Blessed for Evermore </div>
+  <div class="references" id="Blessed for Evermore " style="display: none;">
+    <ul>
+      <li>2 Cor. 11:31</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Blessed of God')">Blessed of God</div>
+  <div class="references" id="Blessed of God" style="display: none;">
+    <ul>
+      <li>Psalm 45:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Branch')">Branch</div>
+  <div class="references" id="Branch" style="display: none;">
+    <ul>
+      <li>Jeremiah 23:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Bread From Heaven')">Bread From Heaven</div>
+  <div class="references" id="Bread From Heaven" style="display: none;">
+    <ul>
+      <li>John 6:32</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Bread of God')">Bread of God</div>
+  <div class="references" id="Bread of God" style="display: none;">
+    <ul>
+      <li>John 6:33</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Bread of Life')">Bread of Life</div>
+  <div class="references" id="Bread of Life" style="display: none;">
+    <ul>
+      <li>John 6:35</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Bridegroom')">Bridegroom</div>
+  <div class="references" id="Bridegroom" style="display: none;">
+    <ul>
+      <li>John 3:29</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Bright and Morning Star')">Bright and Morning Star</div>
+  <div class="references" id="Bright and Morning Star" style="display: none;">
+    <ul>
+      <li>Revelation 22:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Brightness of God\'s Glory')">Brightness of God's Glory</div>
+  <div class="references" id="Brightness of God's Glory" style="display: none;">
+    <ul>
+      <li>Hebrews 1:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('By Whom God Made the Worlds')">By Whom God Made the Worlds</div>
+  <div class="references" id="By Whom God Made the Worlds" style="display: none;">
+    <ul>
+      <li>Hebrews 1:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Captain of Man\'s Salvation')">Captain of Man's Salvation</div>
+  <div class="references" id="Captain of Man's Salvation" style="display: none;">
+    <ul>
+      <li>Hebrews 2:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Carpenter')">Carpenter</div>
+  <div class="references" id="Carpenter" style="display: none;">
+    <ul>
+      <li>Mark 6:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Carpenter\'s Son')">Carpenter's Son</div>
+  <div class="references" id="Carpenter's Son" style="display: none;">
+    <ul>
+      <li>Matthew 13:55</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Chief Cornerstone')">Chief Cornerstone</div>
+  <div class="references" id="Chief Cornerstone" style="display: none;">
+    <ul>
+      <li>Ephesians 2:20</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Chosen of God')">Chosen of God</div>
+  <div class="references" id="Chosen of God" style="display: none;">
+    <ul>
+      <li>1 Peter 2:4, 7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Christ')">Christ</div>
+  <div class="references" id="Christ" style="display: none;">
+    <ul>
+      <li>John 1:41, Matthew 16:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Consecrated for Evermore')">Consecrated for Evermore</div>
+  <div class="references" id="Consecrated for Evermore" style="display: none;">
+    <ul>
+      <li>Hebrews 7:28</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Consolation of Israel')">Consolation of Israel</div>
+  <div class="references" id="Consolation of Israel" style="display: none;">
+    <ul>
+      <li>Luke 2:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Counselor')">Counselor</div>
+  <div class="references" id="Counselor" style="display: none;">
+    <ul>
+      <li>2 Nephi 19:6, Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Creator')">Creator</div>
+  <div class="references" id="Creator" style="display: none;">
+    <ul>
+      <li>Isaiah 40:28</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Creator of All Things')">Creator of All Things</div>
+  <div class="references" id="Creator of All Things" style="display: none;">
+    <ul>
+      <li>Helaman 14:12</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Dayspring')">Dayspring</div>
+  <div class="references" id="Dayspring" style="display: none;">
+    <ul>
+      <li>Luke 1:78-79</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Deliverer')">Deliverer</div>
+  <div class="references" id="Deliverer" style="display: none;">
+    <ul>
+      <li>Romans 11:26</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Did No Sin')">Did No Sin</div>
+  <div class="references" id="Did No Sin" style="display: none;">
+    <ul>
+      <li>1 Peter 2:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Door of the Sheep')">Door of the Sheep</div>
+  <div class="references" id="Door of the Sheep" style="display: none;">
+    <ul>
+      <li>John 10:7, 9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Emmanuuel')">Emmanuuel</div>
+  <div class="references" id="Emmanuuel" style="display: none;">
+    <ul>
+      <li>Isaiah 7:14; 8:8, Matthew 1:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Eternal God')">Eternal God</div>
+  <div class="references" id="Eternal God" style="display: none;">
+    <ul>
+      <li>Deuteronomy 33:27</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Everlasting Father')">Everlasting Father</div>
+  <div class="references" id="Everlasting Father" style="display: none;">
+    <ul>
+      <li>Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Exalted One')">Exalted One</div>
+  <div class="references" id="Exalted One" style="display: none;">
+    <ul>
+      <li>Psalm 89:19</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Exemplar')">Exemplar</div>
+  <div class="references" id="Exemplar" style="display: none;">
+    <ul>
+      <li>Restoration Proclamation</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Express Image of God\'s Person')">Express Image of God's Person</div>
+  <div class="references" id="Express Image of God's Person" style="display: none;">
+    <ul>
+      <li>Hebrews 1:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Faithful and true witness')">Faithful and true witness</div>
+  <div class="references" id="Faithful and true witness" style="display: none;">
+    <ul>
+      <li>Revelation 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Finisher of Our Faith')">Finisher of Our Faith</div>
+  <div class="references" id="Finisher of Our Faith" style="display: none;">
+    <ul>
+      <li>Hebrews 12:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('First and the Last')">First and the Last</div>
+  <div class="references" id="First and the Last" style="display: none;">
+    <ul>
+      <li>Revelation 1:11, D&C 110:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('First Begotten')">First Begotten</div>
+  <div class="references" id="First Begotten" style="display: none;">
+    <ul>
+      <li>Hebrews 1:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('First Fruits of them that Slept')">First Fruits of them that Slept</div>
+  <div class="references" id="First Fruits of them that Slept" style="display: none;">
+    <ul>
+      <li>1 Corinthians 15:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Firstborn')">Firstborn</div>
+  <div class="references" id="Firstborn" style="display: none;">
+    <ul>
+      <li>D&C 93:21-22, Colossians 1:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Forerunner')">Forerunner</div>
+  <div class="references" id="Forerunner" style="display: none;">
+    <ul>
+      <li>Hebrews 6:20</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Foundation of the Church')">Foundation of the Church</div>
+  <div class="references" id="Foundation of the Church" style="display: none;">
+    <ul>
+      <li>1 Cor. 3:11</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Fountain of all Righteousness ')">Fountain of all Righteousness </div>
+  <div class="references" id="Fountain of all Righteousness " style="display: none;">
+    <ul>
+      <li>Ether 12:28</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Fountain of Living Waters')">Fountain of Living Waters</div>
+  <div class="references" id="Fountain of Living Waters" style="display: none;">
+    <ul>
+      <li>Jeremiah 17:13, 1 Nephi 11:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Gift')">Gift</div>
+  <div class="references" id="Gift" style="display: none;">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Giver of every Good gift')">Giver of every Good gift</div>
+  <div class="references" id="Giver of every Good gift" style="display: none;">
+    <ul>
+      <li>Moroni 10:18, James1:17</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('God of Israel')">God of Israel</div>
+  <div class="references" id="God of Israel" style="display: none;">
+    <ul>
+      <li>1 Nephi 19:7, 1 Kings 8:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('God of Jeshurun')">God of Jeshurun</div>
+  <div class="references" id="God of Jeshurun" style="display: none;">
+    <ul>
+      <li>Deuteronomy 33:26</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('God\'s Anointed')">God's Anointed</div>
+  <div class="references" id="God's Anointed" style="display: none;">
+    <ul>
+      <li>Acts 4:27</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('God\'s Holy Child Jesus')">God's Holy Child Jesus</div>
+  <div class="references" id="God's Holy Child Jesus" style="display: none;">
+    <ul>
+      <li>Acts 4:27, 30</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Good Shepherd')">Good Shepherd</div>
+  <div class="references" id="Good Shepherd" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 50:44, John 10:11, 14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Governor the Shall Rule Israel')">Governor the Shall Rule Israel</div>
+  <div class="references" id="Governor the Shall Rule Israel" style="display: none;">
+    <ul>
+      <li>Matthew 2:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Great and last sacrifice')">Great and last sacrifice</div>
+  <div class="references" id="Great and last sacrifice" style="display: none;">
+    <ul>
+      <li>Alma 34:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Great Physician')">Great Physician</div>
+  <div class="references" id="Great Physician" style="display: none;">
+    <ul>
+      <li>Mark 2:17, Behold the Lamb of God- April 2019</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Great Redeemer')">Great Redeemer</div>
+  <div class="references" id="Great Redeemer" style="display: none;">
+    <ul>
+      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/gs/redeemer?lang=eng" target="_blank">Guide to the Scriptures: Redeemer</a></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('He That Cometh in the Name of the Lord')">He That Cometh in the Name of the Lord</div>
+  <div class="references" id="He That Cometh in the Name of the Lord" style="display: none;">
+    <ul>
+      <li>Mathew 21:9, Mark 11:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('He that is Holy, He that is True')">He that is Holy, He that is True</div>
+  <div class="references" id="He that is Holy, He that is True" style="display: none;">
+    <ul>
+      <li>Rev. 3:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('He who Liveth')">He who Liveth</div>
+  <div class="references" id="He who Liveth" style="display: none;">
+    <ul>
+      <li>D&C 110:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Head')">Head</div>
+  <div class="references" id="Head" style="display: none;">
+    <ul>
+      <li>Mosiah 5:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Head of Every Man')">Head of Every Man</div>
+  <div class="references" id="Head of Every Man" style="display: none;">
+    <ul>
+      <li>1 Cor. 11:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Head of the Church')">Head of the Church</div>
+  <div class="references" id="Head of the Church" style="display: none;">
+    <ul>
+      <li>Ephesians 5:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Healer')">Healer</div>
+  <div class="references" id="Healer" style="display: none;">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Heavenly King')">Heavenly King</div>
+  <div class="references" id="Heavenly King" style="display: none;">
+    <ul>
+      <li>Mosiah 2:19</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Heir of All Things')">Heir of All Things</div>
+  <div class="references" id="Heir of All Things" style="display: none;">
+    <ul>
+      <li>Hebrews 1:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('High Priest of Good Things to Come')">High Priest of Good Things to Come</div>
+  <div class="references" id="High Priest of Good Things to Come" style="display: none;">
+    <ul>
+      <li>Hebrews 9:11</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('High Priest of our Profession')">High Priest of our Profession</div>
+  <div class="references" id="High Priest of our Profession" style="display: none;">
+    <ul>
+      <li>Hebrews 3:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Holy')">Holy</div>
+  <div class="references" id="Holy" style="display: none;">
+    <ul>
+      <li>Luke 1:49</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Holy Messiah')">Holy Messiah</div>
+  <div class="references" id="Holy Messiah" style="display: none;">
+    <ul>
+      <li>2 Nephi 2:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Holy One')">Holy One</div>
+  <div class="references" id="Holy One" style="display: none;">
+    <ul>
+      <li>Psalm 16:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Holy One of Israel')">Holy One of Israel</div>
+  <div class="references" id="Holy One of Israel" style="display: none;">
+    <ul>
+      <li>Isaiah 5:19, 2 Nephi 2:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Hope of Glory')">Hope of Glory</div>
+  <div class="references" id="Hope of Glory" style="display: none;">
+    <ul>
+      <li>Col. 1:27</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Hope of Israel')">Hope of Israel</div>
+  <div class="references" id="Hope of Israel" style="display: none;">
+    <ul>
+      <li>Jeremiah 17:13</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('I Am')">I Am</div>
+  <div class="references" id="I Am" style="display: none;">
+    <ul>
+      <li>John 8:58</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('I in Thee')">I in Thee</div>
+  <div class="references" id="I in Thee" style="display: none;">
+    <ul>
+      <li>John 17:21</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('I in Them')">I in Them</div>
+  <div class="references" id="I in Them" style="display: none;">
+    <ul>
+      <li>John 17:26</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Image of God')">Image of God</div>
+  <div class="references" id="Image of God" style="display: none;">
+    <ul>
+      <li>2 Cor. 4:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Image of the Invisible God')">Image of the Invisible God</div>
+  <div class="references" id="Image of the Invisible God" style="display: none;">
+    <ul>
+      <li>Colossians 1:14-15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Immanuel')">Immanuel</div>
+  <div class="references" id="Immanuel" style="display: none;">
+    <ul>
+      <li>Isaiah 7:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('In Whom is Salvation ')">In Whom is Salvation </div>
+  <div class="references" id="In Whom is Salvation " style="display: none;">
+    <ul>
+      <li>2 Tim. 2:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Jehovah')">Jehovah</div>
+  <div class="references" id="Jehovah" style="display: none;">
+    <ul>
+      <li>Psalm 83:18</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Jesus')">Jesus</div>
+  <div class="references" id="Jesus" style="display: none;">
+    <ul>
+      <li>Luke 1:31</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Jesus Christ')">Jesus Christ</div>
+  <div class="references" id="Jesus Christ" style="display: none;">
+    <ul>
+      <li>Mosiah 3:8, 2 Nephi 25:19</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Jesus of Galilee')">Jesus of Galilee</div>
+  <div class="references" id="Jesus of Galilee" style="display: none;">
+    <ul>
+      <li>Mathew 26:69</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Jesus of Nazareth')">Jesus of Nazareth</div>
+  <div class="references" id="Jesus of Nazareth" style="display: none;">
+    <ul>
+      <li>Acts 6:14, Mark 16:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Joseph\'s Son')">Joseph's Son</div>
+  <div class="references" id="Joseph's Son" style="display: none;">
+    <ul>
+      <li>Luke 4:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Judge')">Judge</div>
+  <div class="references" id="Judge" style="display: none;">
+    <ul>
+      <li>Acts 10:42</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Judge of Quick and Dead')">Judge of Quick and Dead</div>
+  <div class="references" id="Judge of Quick and Dead" style="display: none;">
+    <ul>
+      <li>Acts 10:42</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Just One')">Just One</div>
+  <div class="references" id="Just One" style="display: none;">
+    <ul>
+      <li>Acts 7:52, 22:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King Immanuel')">King Immanuel</div>
+  <div class="references" id="King Immanuel" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 128:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King of Israel ')">King of Israel </div>
+  <div class="references" id="King of Israel " style="display: none;">
+    <ul>
+      <li>Matthew 27:42</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King of Kings')">King of Kings</div>
+  <div class="references" id="King of Kings" style="display: none;">
+    <ul>
+      <li>1 Timothy 6:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King of Sion')">King of Sion</div>
+  <div class="references" id="King of Sion" style="display: none;">
+    <ul>
+      <li>Matthew 21:5; John 12:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King of the Jews')">King of the Jews</div>
+  <div class="references" id="King of the Jews" style="display: none;">
+    <ul>
+      <li>Matthew 2:2, 27:11; John 19:2-3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('King That Cometh in the Name of the Lord')">King That Cometh in the Name of the Lord</div>
+  <div class="references" id="King That Cometh in the Name of the Lord" style="display: none;">
+    <ul>
+      <li>Luke 19:38; John 12:13</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lamb of God')">Lamb of God</div>
+  <div class="references" id="Lamb of God" style="display: none;">
+    <ul>
+      <li>1 Nephi 14:1, John 1:29, 36</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lamb to the Slaughter')">Lamb to the Slaughter</div>
+  <div class="references" id="Lamb to the Slaughter" style="display: none;">
+    <ul>
+      <li>Isaiah 53:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lawgiver')">Lawgiver</div>
+  <div class="references" id="Lawgiver" style="display: none;">
+    <ul>
+      <li>Isaiah 33:22</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Light of Men')">Light of Men</div>
+  <div class="references" id="Light of Men" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 93:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Light of the World')">Light of the World</div>
+  <div class="references" id="Light of the World" style="display: none;">
+    <ul>
+      <li>John 8:12; 9:5; 12:46</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Light of Truth')">Light of Truth</div>
+  <div class="references" id="Light of Truth" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 88:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Light Which Shineth in Darkness')">Light Which Shineth in Darkness</div>
+  <div class="references" id="Light Which Shineth in Darkness" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 6:21</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Light Which Ye Shall Hold Up')">Light Which Ye Shall Hold Up</div>
+  <div class="references" id="Light Which Ye Shall Hold Up" style="display: none;">
+    <ul>
+      <li>3 Nephi 18:24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Like unto God')">Like unto God</div>
+  <div class="references" id="Like unto God" style="display: none;">
+    <ul>
+      <li>Abraham 3:24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lion of the Tribe of Juda')">Lion of the Tribe of Juda</div>
+  <div class="references" id="Lion of the Tribe of Juda" style="display: none;">
+    <ul>
+      <li>Revelations 5:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Living Bread')">Living Bread</div>
+  <div class="references" id="Living Bread" style="display: none;">
+    <ul>
+      <li>John 6:51</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Living God')">Living God</div>
+  <div class="references" id="Living God" style="display: none;">
+    <ul>
+      <li>Jeremiah 10:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Living Manna')">Living Manna</div>
+  <div class="references" id="Living Manna" style="display: none;">
+    <ul>
+      <li>John 6 chapter heading</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Living Stone')">Living Stone</div>
+  <div class="references" id="Living Stone" style="display: none;">
+    <ul>
+      <li>1 Peter 2:4, 7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Living Water')">Living Water</div>
+  <div class="references" id="Living Water" style="display: none;">
+    <ul>
+      <li>John 4:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord')">Lord</div>
+  <div class="references" id="Lord" style="display: none;">
+    <ul>
+      <li>Matthew 28:6; Mark 16:19-20; Luke 2:11, 22:61; John 21:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord both of Dead and Living')">Lord both of Dead and Living</div>
+  <div class="references" id="Lord both of Dead and Living" style="display: none;">
+    <ul>
+      <li>Romans 14:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord from Heaven')">Lord from Heaven</div>
+  <div class="references" id="Lord from Heaven" style="display: none;">
+    <ul>
+      <li>1 Cor. 15:47</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord God')">Lord God</div>
+  <div class="references" id="Lord God" style="display: none;">
+    <ul>
+      <li>2 Nephi 26: 23-24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord God Omnipotent')">Lord God Omnipotent</div>
+  <div class="references" id="Lord God Omnipotent" style="display: none;">
+    <ul>
+      <li>Mosiah 5:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord Jesus')">Lord Jesus</div>
+  <div class="references" id="Lord Jesus" style="display: none;">
+    <ul>
+      <li>Luke 24:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of All')">Lord of All</div>
+  <div class="references" id="Lord of All" style="display: none;">
+    <ul>
+      <li>Luke 10:36</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of Glory')">Lord of Glory</div>
+  <div class="references" id="Lord of Glory" style="display: none;">
+    <ul>
+      <li>James 2:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of Heaven and Earth')">Lord of Heaven and Earth</div>
+  <div class="references" id="Lord of Heaven and Earth" style="display: none;">
+    <ul>
+      <li>Acts 17:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of Hosts')">Lord of Hosts</div>
+  <div class="references" id="Lord of Hosts" style="display: none;">
+    <ul>
+      <li>Zechariah 8:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of Lords')">Lord of Lords</div>
+  <div class="references" id="Lord of Lords" style="display: none;">
+    <ul>
+      <li>Revelation 19:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of the Sabbath')">Lord of the Sabbath</div>
+  <div class="references" id="Lord of the Sabbath" style="display: none;">
+    <ul>
+      <li>Mark 2:28</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord of the Vineyard')">Lord of the Vineyard</div>
+  <div class="references" id="Lord of the Vineyard" style="display: none;">
+    <ul>
+      <li>Jacob 5:1-53</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord Omnipotent')">Lord Omnipotent</div>
+  <div class="references" id="Lord Omnipotent" style="display: none;">
+    <ul>
+      <li>Mosiah 3:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lord our Righteousness')">Lord our Righteousness</div>
+  <div class="references" id="Lord our Righteousness" style="display: none;">
+    <ul>
+      <li>Jerimiah 23:6, 33:16; Mal. 4:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Lowly in Heart')">Lowly in Heart</div>
+  <div class="references" id="Lowly in Heart" style="display: none;">
+    <ul>
+      <li>Matthew 11:29</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Man of Sorrows')">Man of Sorrows</div>
+  <div class="references" id="Man of Sorrows" style="display: none;">
+    <ul>
+      <li>Isaiah 53:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Master')">Master</div>
+  <div class="references" id="Master" style="display: none;">
+    <ul>
+      <li>Matthew 23:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Master of the Vineyard')">Master of the Vineyard</div>
+  <div class="references" id="Master of the Vineyard" style="display: none;">
+    <ul>
+      <li>Jacob 5:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mediator')">Mediator</div>
+  <div class="references" id="Mediator" style="display: none;">
+    <ul>
+      <li>2 Nephi 2:27, Hebrews 9:15, 1 Tim. 2:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mediator of a Better Covenant')">Mediator of a Better Covenant</div>
+  <div class="references" id="Mediator of a Better Covenant" style="display: none;">
+    <ul>
+      <li>Hebrews 8:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mediator of the New Testament')">Mediator of the New Testament</div>
+  <div class="references" id="Mediator of the New Testament" style="display: none;">
+    <ul>
+      <li>Hebrews 9:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Meek')">Meek</div>
+  <div class="references" id="Meek" style="display: none;">
+    <ul>
+      <li>Matthew 11:29</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Meek and Lowly')">Meek and Lowly</div>
+  <div class="references" id="Meek and Lowly" style="display: none;">
+    <ul>
+      <li>Matthew 21:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mentor')">Mentor</div>
+  <div class="references" id="Mentor" style="display: none;">
+    <ul>
+      <li><a href="https://www.churchofjesuschrist.org/broadcasts/article/worldwide-devotionals/2017/01/prophets-leadership-and-divine-law?lang=eng" target="_blank">Prophets, Leadership, and Divine Law</a></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Merciful and Faithful High Priest')">Merciful and Faithful High Priest</div>
+  <div class="references" id="Merciful and Faithful High Priest" style="display: none;">
+    <ul>
+      <li>Hebrews 2:17</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Messenger of the Covenant')">Messenger of the Covenant</div>
+  <div class="references" id="Messenger of the Covenant" style="display: none;">
+    <ul>
+      <li>Malachi 3:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Messiah')">Messiah</div>
+  <div class="references" id="Messiah" style="display: none;">
+    <ul>
+      <li>2 Nephi 25:19, Daniel 9:25, John 1:41</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mighty God')">Mighty God</div>
+  <div class="references" id="Mighty God" style="display: none;">
+    <ul>
+      <li>Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mighty One of Israel')">Mighty One of Israel</div>
+  <div class="references" id="Mighty One of Israel" style="display: none;">
+    <ul>
+      <li>1 Nephi 22:12</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mighty One of Jacob')">Mighty One of Jacob</div>
+  <div class="references" id="Mighty One of Jacob" style="display: none;">
+    <ul>
+      <li>Isaiah 60:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Mighty to Save')">Mighty to Save</div>
+  <div class="references" id="Mighty to Save" style="display: none;">
+    <ul>
+      <li>Alma 34:18, Doctrine and Covenants 133:47</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Minister of the Circumcusion for the Truth of God')">Minister of the Circumcusion for the Truth of God</div>
+  <div class="references" id="Minister of the Circumcusion for the Truth of God" style="display: none;">
+    <ul>
+      <li>Romans 15:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Minister of the Sanctuary and of the True Tabernacle')">Minister of the Sanctuary and of the True Tabernacle</div>
+  <div class="references" id="Minister of the Sanctuary and of the True Tabernacle" style="display: none;">
+    <ul>
+      <li>Hebrews 8:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('My Light')">My Light</div>
+  <div class="references" id="My Light" style="display: none;">
+    <ul>
+      <li>Psalm 27:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('My Salvation')">My Salvation</div>
+  <div class="references" id="My Salvation" style="display: none;">
+    <ul>
+      <li>Psalm 27:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('My Song')">My Song</div>
+  <div class="references" id="My Song" style="display: none;">
+    <ul>
+      <li>Isaiah 12:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('My Strength')">My Strength</div>
+  <div class="references" id="My Strength" style="display: none;">
+    <ul>
+      <li>Isaiah 12:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Nazarene')">Nazarene</div>
+  <div class="references" id="Nazarene" style="display: none;">
+    <ul>
+      <li>Matthew 2:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Not of the World')">Not of the World</div>
+  <div class="references" id="Not of the World" style="display: none;">
+    <ul>
+      <li>John 17:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('One Who Has All Power')">One Who Has All Power</div>
+  <div class="references" id="One Who Has All Power" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 61:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('One With the Father')">One With the Father</div>
+  <div class="references" id="One With the Father" style="display: none;">
+    <ul>
+      <li>John 10:30</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Only Begotten of the Father')">Only Begotten of the Father</div>
+  <div class="references" id="Only Begotten of the Father" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 76:23; John 1:14, 18</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Only Begotten Son')">Only Begotten Son</div>
+  <div class="references" id="Only Begotten Son" style="display: none;">
+    <ul>
+      <li>John 3:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Only Wise God')">Only Wise God</div>
+  <div class="references" id="Only Wise God" style="display: none;">
+    <ul>
+      <li>Jude 1:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Our All')">Our All</div>
+  <div class="references" id="Our All" style="display: none;">
+    <ul>
+      <li>Colossians 1:16-17, 3:11; Hymn 6: Redeemer of Israel</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Our Life')">Our Life</div>
+  <div class="references" id="Our Life" style="display: none;">
+    <ul>
+      <li>Col. 3:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Our Passover')">Our Passover</div>
+  <div class="references" id="Our Passover" style="display: none;">
+    <ul>
+      <li>1 Cor. 5:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Our Peace')">Our Peace</div>
+  <div class="references" id="Our Peace" style="display: none;">
+    <ul>
+      <li>Eph. 2:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Paschal Lamb')">Paschal Lamb</div>
+  <div class="references" id="Paschal Lamb" style="display: none;">
+    <ul>
+      <li><a href="https://www.churchofjesuschrist.org/study/general-conference/2021/04/23holland?lang=eng" target="_blank">Not as the World Giveth, Elder Jeffery R. Holland</a></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Power of God')">Power of God</div>
+  <div class="references" id="Power of God" style="display: none;">
+    <ul>
+      <li>1 Cor. 1:24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Precious')">Precious</div>
+  <div class="references" id="Precious" style="display: none;">
+    <ul>
+      <li>1 Peter 2:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Prince')">Prince</div>
+  <div class="references" id="Prince" style="display: none;">
+    <ul>
+      <li>Acts 5:31</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Prince of Life')">Prince of Life</div>
+  <div class="references" id="Prince of Life" style="display: none;">
+    <ul>
+      <li>Acts 3:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Prince of Peace')">Prince of Peace</div>
+  <div class="references" id="Prince of Peace" style="display: none;">
+    <ul>
+      <li>Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Prophet')">Prophet</div>
+  <div class="references" id="Prophet" style="display: none;">
+    <ul>
+      <li>Matthew 21:11, Deut. 18:15-16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Prophet of Nazareth')">Prophet of Nazareth</div>
+  <div class="references" id="Prophet of Nazareth" style="display: none;">
+    <ul>
+      <li>Matthew 21:11</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Propitiation for our sins')">Propitiation for our sins</div>
+  <div class="references" id="Propitiation for our sins" style="display: none;">
+    <ul>
+      <li>1 John 2:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Propitiation Through Faith')">Propitiation Through Faith</div>
+  <div class="references" id="Propitiation Through Faith" style="display: none;">
+    <ul>
+      <li>Romans 3:25; 1 John 2:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rabbi')">Rabbi</div>
+  <div class="references" id="Rabbi" style="display: none;">
+    <ul>
+      <li>John 3:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rabboni')">Rabboni</div>
+  <div class="references" id="Rabboni" style="display: none;">
+    <ul>
+      <li>John 20:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Redeemer')">Redeemer</div>
+  <div class="references" id="Redeemer" style="display: none;">
+    <ul>
+      <li>1 Nephi 10:5, Job 19:25, Isaiah 59:20, 60:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Redeemer of the World')">Redeemer of the World</div>
+  <div class="references" id="Redeemer of the World" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 93:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Refuge')">Refuge</div>
+  <div class="references" id="Refuge" style="display: none;">
+    <ul>
+      <li>Psalm 46:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Relief')">Relief</div>
+  <div class="references" id="Relief" style="display: none;">
+    <ul>
+      <li><a href= "https://newsroom.churchofjesuschrist.org/event/worldwide-relief-society-devotional-2024" target="_blank">President Nelson, Relief Society Broadcast</a></li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Resurrection ')">Resurrection </div>
+  <div class="references" id="Resurrection " style="display: none;">
+    <ul>
+      <li>John 11:25, Revelation 20:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Righteous Judge')">Righteous Judge</div>
+  <div class="references" id="Righteous Judge" style="display: none;">
+    <ul>
+      <li>Moses 6:57; 2 Tim. 4:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Righteous Man')">Righteous Man</div>
+  <div class="references" id="Righteous Man" style="display: none;">
+    <ul>
+      <li>Luke 23:47</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Risen Lord')">Risen Lord</div>
+  <div class="references" id="Risen Lord" style="display: none;">
+    <ul>
+      <li>The Living Christ</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rock of Our Redeemer')">Rock of Our Redeemer</div>
+  <div class="references" id="Rock of Our Redeemer" style="display: none;">
+    <ul>
+      <li>Helaman 5:12</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rock of Righteousness')">Rock of Righteousness</div>
+  <div class="references" id="Rock of Righteousness" style="display: none;">
+    <ul>
+      <li>2 Nephi 4:35</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rock of Salvation')">Rock of Salvation</div>
+  <div class="references" id="Rock of Salvation" style="display: none;">
+    <ul>
+      <li>Jacob 7:25, Deuteronomy 32:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rock of Strength')">Rock of Strength</div>
+  <div class="references" id="Rock of Strength" style="display: none;">
+    <ul>
+      <li>Isaiah 17:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Rose of Sharon')">Rose of Sharon</div>
+  <div class="references" id="Rose of Sharon" style="display: none;">
+    <ul>
+      <li>Song of Solomon 2:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Salvation')">Salvation</div>
+  <div class="references" id="Salvation" style="display: none;">
+    <ul>
+      <li>1 Nephi 13:36</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Samaritan')">Samaritan</div>
+  <div class="references" id="Samaritan" style="display: none;">
+    <ul>
+      <li>John 8:48</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Sanctuary ')">Sanctuary </div>
+  <div class="references" id="Sanctuary " style="display: none;">
+    <ul>
+      <li>Isaiah 8:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Savior')">Savior</div>
+  <div class="references" id="Savior" style="display: none;">
+    <ul>
+      <li>1 Timothy; Matthew 1:21; Luke 2:11; Acts 5:31</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Savior of Israel')">Savior of Israel</div>
+  <div class="references" id="Savior of Israel" style="display: none;">
+    <ul>
+      <li>Acts 13:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Savior of the Body')">Savior of the Body</div>
+  <div class="references" id="Savior of the Body" style="display: none;">
+    <ul>
+      <li>Eph. 5:23</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Savior of the World')">Savior of the World</div>
+  <div class="references" id="Savior of the World" style="display: none;">
+    <ul>
+      <li>John 4:42; 1 Nephi 10:4, Doctrine and Covenants 1:20</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Seed of the Woman')">Seed of the Woman</div>
+  <div class="references" id="Seed of the Woman" style="display: none;">
+    <ul>
+      <li>Genesis 3:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Servant of the Lord')">Servant of the Lord</div>
+  <div class="references" id="Servant of the Lord" style="display: none;">
+    <ul>
+      <li>Isaiah 42:1-7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Sheep Before Her Shearers')">Sheep Before Her Shearers</div>
+  <div class="references" id="Sheep Before Her Shearers" style="display: none;">
+    <ul>
+      <li>Isaiah 53:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Shepherd of Israel')">Shepherd of Israel</div>
+  <div class="references" id="Shepherd of Israel" style="display: none;">
+    <ul>
+      <li>Psalm 80:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Shiloh')">Shiloh</div>
+  <div class="references" id="Shiloh" style="display: none;">
+    <ul>
+      <li>Genesis 49:10</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of Abraham')">Son of Abraham</div>
+  <div class="references" id="Son of Abraham" style="display: none;">
+    <ul>
+      <li>Matthew 1:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of David')">Son of David</div>
+  <div class="references" id="Son of David" style="display: none;">
+    <ul>
+      <li>Matthew 9:27; 20:31; 21:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of God')">Son of God</div>
+  <div class="references" id="Son of God" style="display: none;">
+    <ul>
+      <li>Luke 1:35</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of Man')">Son of Man</div>
+  <div class="references" id="Son of Man" style="display: none;">
+    <ul>
+      <li>Mathew 18:11, Mark 2:28</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of Mary')">Son of Mary</div>
+  <div class="references" id="Son of Mary" style="display: none;">
+    <ul>
+      <li>Mark 6:3</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of Righteousness')">Son of Righteousness</div>
+  <div class="references" id="Son of Righteousness" style="display: none;">
+    <ul>
+      <li>2 Nephi 26:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of the Blessed')">Son of the Blessed</div>
+  <div class="references" id="Son of the Blessed" style="display: none;">
+    <ul>
+      <li>Mark 14:61</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of the Everlasting God')">Son of the Everlasting God</div>
+  <div class="references" id="Son of the Everlasting God" style="display: none;">
+    <ul>
+      <li>1 Nephi 11:32</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of the Highest')">Son of the Highest</div>
+  <div class="references" id="Son of the Highest" style="display: none;">
+    <ul>
+      <li>Luke 1:32</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of the Living God')">Son of the Living God</div>
+  <div class="references" id="Son of the Living God" style="display: none;">
+    <ul>
+      <li>Matthew 16:16</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Son of the Most High God')">Son of the Most High God</div>
+  <div class="references" id="Son of the Most High God" style="display: none;">
+    <ul>
+      <li>Mark 5:7</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Spirit of the Lord Omnipotent')">Spirit of the Lord Omnipotent</div>
+  <div class="references" id="Spirit of the Lord Omnipotent" style="display: none;">
+    <ul>
+      <li>Mosiah 5:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Spirit of Truth')">Spirit of Truth</div>
+  <div class="references" id="Spirit of Truth" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 93:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Stem of Jesse')">Stem of Jesse</div>
+  <div class="references" id="Stem of Jesse" style="display: none;">
+    <ul>
+      <li>Doctrine and Covenants 113:1, Isaiah 11:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Teacher')">Teacher</div>
+  <div class="references" id="Teacher" style="display: none;">
+    <ul>
+      <li>John 3:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Amen')">The Amen</div>
+  <div class="references" id="The Amen" style="display: none;">
+    <ul>
+      <li>Revelation 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Beginning of the Creation of God')">The Beginning of the Creation of God</div>
+  <div class="references" id="The Beginning of the Creation of God" style="display: none;">
+    <ul>
+      <li>Revelation 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Chosen of God')">The Chosen of God</div>
+  <div class="references" id="The Chosen of God" style="display: none;">
+    <ul>
+      <li>Luke 23:35</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Christ of God')">The Christ of God</div>
+  <div class="references" id="The Christ of God" style="display: none;">
+    <ul>
+      <li>Luke 9:20</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The End of the Law for Righteousness')">The End of the Law for Righteousness</div>
+  <div class="references" id="The End of the Law for Righteousness" style="display: none;">
+    <ul>
+      <li>Romans 10:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Faithful and True Witness')">The Faithful and True Witness</div>
+  <div class="references" id="The Faithful and True Witness" style="display: none;">
+    <ul>
+      <li>Revelation 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Great God')">The Great God</div>
+  <div class="references" id="The Great God" style="display: none;">
+    <ul>
+      <li>Titus 2:13</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Holy One and the Just')">The Holy One and the Just</div>
+  <div class="references" id="The Holy One and the Just" style="display: none;">
+    <ul>
+      <li>Acts 3:14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Light')">The Light</div>
+  <div class="references" id="The Light" style="display: none;">
+    <ul>
+      <li>Mosiah 16:9</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Lord\'s Christ')">The Lord's Christ</div>
+  <div class="references" id="The Lord's Christ" style="display: none;">
+    <ul>
+      <li>Luke 2:26</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Mighty God')">The Mighty God</div>
+  <div class="references" id="The Mighty God" style="display: none;">
+    <ul>
+      <li>Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Resurrection and The Life')">The Resurrection and The Life</div>
+  <div class="references" id="The Resurrection and The Life" style="display: none;">
+    <ul>
+      <li>John 11:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Rock')">The Rock</div>
+  <div class="references" id="The Rock" style="display: none;">
+    <ul>
+      <li>Deuteronomy 32:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Same Yesterday, Today, and Forever')">The Same Yesterday, Today, and Forever</div>
+  <div class="references" id="The Same Yesterday, Today, and Forever" style="display: none;">
+    <ul>
+      <li>Hebrews 13:8</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Shepherd and Bishop of Souls')">The Shepherd and Bishop of Souls</div>
+  <div class="references" id="The Shepherd and Bishop of Souls" style="display: none;">
+    <ul>
+      <li>1 Peter 2:25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Spiritual Rock')">The Spiritual Rock</div>
+  <div class="references" id="The Spiritual Rock" style="display: none;">
+    <ul>
+      <li>1 Cor. 10:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Veil')">The Veil</div>
+  <div class="references" id="The Veil" style="display: none;">
+    <ul>
+      <li>Hebrews 10:19-20</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Vine')">The Vine</div>
+  <div class="references" id="The Vine" style="display: none;">
+    <ul>
+      <li>John 15:5</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Way, the Truth and the Life')">The Way, the Truth and the Life</div>
+  <div class="references" id="The Way, the Truth and the Life" style="display: none;">
+    <ul>
+      <li>John 14:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('The Word')">The Word</div>
+  <div class="references" id="The Word" style="display: none;">
+    <ul>
+      <li>John 1:1, 14</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Tree of Life')">Tree of Life</div>
+  <div class="references" id="Tree of Life" style="display: none;">
+    <ul>
+      <li>1 Nephi 8:10–12; 11:21–25</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('True Vine')">True Vine</div>
+  <div class="references" id="True Vine" style="display: none;">
+    <ul>
+      <li>John 15:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Truth ')">Truth </div>
+  <div class="references" id="Truth " style="display: none;">
+    <ul>
+      <li>John 17:17, 19</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Very present help in trouble ')">Very present help in trouble </div>
+  <div class="references" id="Very present help in trouble " style="display: none;">
+    <ul>
+      <li>Psalm 46:1</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Who Gave Himself for Our Sins')">Who Gave Himself for Our Sins</div>
+  <div class="references" id="Who Gave Himself for Our Sins" style="display: none;">
+    <ul>
+      <li>Gal. 1:4</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Who Knew No Sin')">Who Knew No Sin</div>
+  <div class="references" id="Who Knew No Sin" style="display: none;">
+    <ul>
+      <li>2 Cor. 5:21; Hebrews 4:15</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Who Sitteth of the Right Hand of God')">Who Sitteth of the Right Hand of God</div>
+  <div class="references" id="Who Sitteth of the Right Hand of God" style="display: none;">
+    <ul>
+      <li>Col. 3:1; Hebrews 1:3; 10:12; 12:2</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Wisdom of God')">Wisdom of God</div>
+  <div class="references" id="Wisdom of God" style="display: none;">
+    <ul>
+      <li>1 Cor. 1:24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Wonderful')">Wonderful</div>
+  <div class="references" id="Wonderful" style="display: none;">
+    <ul>
+      <li>Isaiah 9:6</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Word of God')">Word of God</div>
+  <div class="references" id="Word of God" style="display: none;">
+    <ul>
+      <li>1 Nephi 15:24</li>
+    </ul>
+  </div>
+
+  <div class='name' onclick="toggleReferences('Word of Life')">Word of Life</div>
+  <div class="references" id="Word of Life" style="display: none;">
+    <ul>
+      <li>1 John 1:1</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Include name html code -->
+<!-- <iframe src="names_of_christ.html" style="width: 100%; height: 500px; border: none;"></iframe> -->
+
+<script>
+function toggleReferences(name) {
+  console.log("Button Clicked")
+
+  // Get all reference div elements
+  var references = document.querySelectorAll('.references');
+
+  // Close all open reference sections
+  references.forEach(function(ref) {
+    if (ref.id !== name && ref.style.display !== "none") {
+      ref.style.display = "none";
+    }
+  });
+
+  // Toggle the clicked reference section
+  var references = document.getElementById(name);
+  if (references.style.display === "none") {
+    references.style.display = "block";
+  } else {
+    references.style.display = "none";
+  }
+}
+
+// Function to handle search
+document.getElementById("searchInput").addEventListener("input", function() {
+  var searchValue = this.value.toLowerCase(); // Get search value and convert to lowercase
+  var names = document.querySelectorAll('.name'); // Get all name elements
+  var matchingNamesCount = 0; // Counter for matching names
+
+
+  // Loop through each name element
+  names.forEach(function(name) {
+    var nameText = name.textContent.toLowerCase(); // Get text content of the name and convert to lowercase
+    if (nameText.indexOf(searchValue) === -1) {
+      // If search value is not found in the name, hide the element
+      name.style.display = "none";
+    } else {
+      // Otherwise, show the element
+      name.style.display = "inline-block";
+      matchingNamesCount++; // Increment counter for matching names
+    }
+  });
+  // Display the number of matching names
+  document.getElementById("resultCount").textContent = matchingNamesCount + " names";
+
+});
+</script>
+
+<!-- sub title -->
+<h2> </h2>
+
+
+</body>
+</html>
