@@ -24,7 +24,7 @@ def generate_html_from_csv(csv_file):
     # html_code += "</div>\n</body>\n</html>"
     return html_code
 
-csv_file = "Names and Titles of Jesus - Sheet1.csv"
+csv_file = "Names and Titles of Jesus - Sheet2.csv"
 html_output = generate_html_from_csv(csv_file)
 
 with open("names_of_christ.html", 'w') as file:
